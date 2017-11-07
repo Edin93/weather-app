@@ -1,0 +1,168 @@
+*{
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+}
+body{
+    line-height: 1.4rem;
+    background-color: #ccc;
+    color:#FFFFFF;
+    font-weight: 900;
+    background-image: url('../images/background.gif');
+    background-repeat: no-repeat;
+}
+.container{
+    max-width: 600px;
+    margin: 25px auto;
+    text-align: center;
+}
+.header-icon{
+    position:relative;
+    top:10px;
+}
+
+h1{
+    font-size: 2.2rem;
+    font-style: italic;
+    margin: 15px;
+    margin-bottom: 12px;
+}
+h2{
+    font-style: italic;
+    font-size:1.8rem;
+    margin-bottom: 12px;
+}
+
+/*Image spinner*/
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    margin: 0 auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* myPlace */
+
+.myPlace{
+    font-size: 2rem;
+    font-style: italic;
+    margin: 40px;
+}
+
+/* myTemperature */
+
+.myTemperature{
+    font-size: 2rem;
+    margin: 20px;
+    display: inline-block;
+}
+
+/* Temperature Unit*/
+
+.temperature-unit{
+    margin-top: -42px;
+}
+
+
+/*fahr and cels*/
+
+.change{
+    display: none;
+}
+
+.fahr, .cels{
+    border: none;
+    background: inherit;
+    color:white;
+    font-size: 2rem;
+}
+
+span{
+    font-size: 1.8rem;
+    color: white;
+}
+
+/* description */
+
+.description{
+    font-size: 2.2rem;
+    font-style: italic;
+    margin:15px;
+}
+
+/* icon */
+
+/* the div containing the weather icon div*/
+.weather-icon{
+    margin:5px;
+}
+
+/*the icon weather img element*/
+.icon{
+    width: 50%;
+    height: 50%;
+    margin: -20px;
+}
+
+/* Link */
+
+a{
+    text-decoration: none;
+    color:tomato;
+}
+
+/* Footer */
+footer{
+    position:fixed;
+    bottom:0;
+    margin: 8px auto;
+    text-align: center;
+    right: 0;
+    left: 0;
+}
+.myfooter{
+    margin: 0 auto;
+    text-align: center;
+}
+
+aside{
+    max-width:250px;
+    margin:10px auto;
+    padding: 5px;
+    text-align: center;
+}
+iframe{
+    width:100%;
+    display:none;
+    margin-left: 50px;
+}
+.full-container{
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.header{
+    width:90%;
+    padding: 8px;
+    margin:12px auto;
+    text-align: center;
+}
+
+.user-time{
+    text-align: center;
+    margin: 5px auto;
+    margin-left: -40px;
+    display: none;
+}
