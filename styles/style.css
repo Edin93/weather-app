@@ -11,11 +11,30 @@ body{
     background-image: url('../images/background.gif');
     background-repeat: no-repeat;
 }
+
+.full-container{
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 .container{
     max-width: 600px;
     margin: 25px auto;
     text-align: center;
 }
+
+.header{
+    width:90%;
+    padding: 8px;
+    margin:12px auto;
+    text-align: center;
+}
+
+
 .header-icon{
     position:relative;
     top:10px;
@@ -35,8 +54,8 @@ h2{
 
 /*Image spinner*/
 .loader {
-    border: 16px solid #f3f3f3; /* Light grey */
-    border-top: 16px solid #3498db; /* Blue */
+    border: 16px solid #f3f3f3; 
+    border-top: 16px solid #3498db;
     border-radius: 50%;
     width: 120px;
     height: 120px;
@@ -71,6 +90,9 @@ h2{
     margin-top: -42px;
 }
 
+button{
+    cursor: pointer;
+}
 
 /*fahr and cels*/
 
@@ -112,6 +134,29 @@ span{
     margin: -20px;
 }
 
+/*Aside*/
+
+aside{
+    max-width:250px;
+    margin:10px auto;
+    margin-top: 42px;
+    padding: 5px;
+    text-align: center;
+}
+iframe{
+    width:100%;
+    display:none;
+    margin-left: 50px;
+}
+
+.user-time{
+    text-align: center;
+    margin: 5px auto;
+    margin-left: -5px;
+    display: none;
+    font-size: 1.5rem;
+}
+
 /* Link */
 
 a{
@@ -131,38 +176,4 @@ footer{
 .myfooter{
     margin: 0 auto;
     text-align: center;
-}
-
-aside{
-    max-width:250px;
-    margin:10px auto;
-    padding: 5px;
-    text-align: center;
-}
-iframe{
-    width:100%;
-    display:none;
-    margin-left: 50px;
-}
-.full-container{
-    max-width: 800px;
-    text-align: center;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.header{
-    width:90%;
-    padding: 8px;
-    margin:12px auto;
-    text-align: center;
-}
-
-.user-time{
-    text-align: center;
-    margin: 5px auto;
-    margin-left: -40px;
-    display: none;
 }
